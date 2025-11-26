@@ -1,0 +1,17 @@
+{
+  "name": "deploy",
+  "version": "1.0.0",
+  "description": "部署脚本",
+  "main": "deploy.js",
+  "scripts": {
+    "vercel": "vercel --prod",
+    "vercel:dev": "vercel",
+    "netlify": "netlify deploy --prod",
+    "netlify:dev": "netlify deploy",
+    "gh-pages": "gh-pages -d dist",
+    "deploy": "npm run build && npm run vercel"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
